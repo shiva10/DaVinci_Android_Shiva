@@ -1,0 +1,21 @@
+sanity: PLATFORM=android -r features/support -r features/step_definitions -r features/page/ -r features/repo_id/ --tags @sanity_final --color --format html --out sanity_report.html --format 'Slowhandcuke::Formatter'
+
+rerun: --color RESET_BETWEEN_SCENARIOS=1 PLATFORM=android -r features/support -r features/android/support -r features/android/helpers -r features/step_definitions -r features/android/pages/ @rerun.txt --format html --out deviceName_rerun_report.html
+
+uj: PLATFORM=android -r features/support -r features/step_definitions -r features/page/ -r features/repo_id/ --tags @uj --color --format html --out uj.html
+
+tablet: PLATFORM=tablet -r features/support -r features/step_definitions -r features/page/ -r features/repo_id/ --tags @search --color --format html --out search_tablet_ghs.html --format 'Slowhandcuke::Formatter'
+
+phone: PLATFORM=phone -r features/support -r features/step_definitions -r features/page/ -r features/repo_id/ --tags @search --color --format html --out search_phone_ghs.html --format 'Slowhandcuke::Formatter'
+
+
+malay: PLATFORM=malay -r features/support -r features/step_definitions -r features/page -r features/repo_id
+thai: PLATFORM=thai -r features/support -r features/step_definitions -r features/page -r features/repo_id
+
+
+
+
+
+
+
+
